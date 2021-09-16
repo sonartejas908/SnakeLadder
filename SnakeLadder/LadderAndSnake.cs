@@ -4,10 +4,12 @@ using System.Text;
 
 namespace SnakeLadder
 {
-    class RollDice
+    class LadderAndSnake
     {
-        public static void Roll()
+        public static void LadderAndSnakeout()
         {
+
+
             int Player1 = 0;
             for (int i = 1; i <= 30; i++)
             {
@@ -59,9 +61,7 @@ namespace SnakeLadder
                     Console.WriteLine("You Got Ladder. Your new Position is 76");
                 }
 
-            }    
-            
+            }
         }
-
     }
 }

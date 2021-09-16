@@ -6,7 +6,10 @@ namespace SnakeLadder
     {
         static void Main(string[] args)
         {
-            RollDice.Roll();
+            //RollDice.Roll();
+            //LadderAndSnake.LadderAndSnakeout();
+            //Win100.Win();
+            //DieShuffle.Frequency();
         }
     }
 }

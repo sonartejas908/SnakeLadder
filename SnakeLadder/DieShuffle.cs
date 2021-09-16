@@ -4,19 +4,30 @@ using System.Text;
 
 namespace SnakeLadder
 {
-    class RollDice
+    class DieShuffle
     {
-        public static void Roll()
+        public static void Frequency()
         {
             int Player1 = 0;
-            for (int i = 1; i <= 30; i++)
+            int Freq = 0;
+            while (Player1 < 100)
             {
                 Random random = new Random();
                 int Dice = random.Next(1, 7);
+                Freq++ ;
                 Console.WriteLine("Its a" + " " + Dice);
+                int RoughVar = Dice;
                 Player1 = (Player1 + Dice);
+                if (Player1 > 100)
+                {
+                    Player1 = -RoughVar;
+                }
                 Console.WriteLine("Position is" + " " + Player1);
-
+                if (Player1 == 100)
+                {
+                    Console.WriteLine("Congragulation you won the Game!!!!!!!!");
+                    Console.WriteLine("Dice shuffled"+" " +Freq +" " + "Times");
+                }
 
                 if (Player1 == 19)
                 {
@@ -58,10 +69,7 @@ namespace SnakeLadder
                     Player1 = 91;
                     Console.WriteLine("You Got Ladder. Your new Position is 76");
                 }
-
-            }    
-            
+            }
         }
-
     }
 }
